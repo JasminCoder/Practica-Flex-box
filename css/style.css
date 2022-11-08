@@ -1,0 +1,65 @@
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container1 {
+    background-color: red;
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+    display: flex; /*se pone en el contenedro padre*/
+    align-items: center; /*flex-star (lo pone al principio,izquierda), flex-end (lo pone al final, derecha) 
+    y stretch(estira los elementos para q alcancen el maximo del contenedir padre)*/ 
+    justify-content: center; /*center (al centro). flex-star(al principio, izquierda), 
+    space-between(lo pega a las orillas y deja un espacio en medio). 
+    space-around(dejo un pequeño espacio a los lados y en el centro un espacio un poco mas grande,...  un esapacio igual entre los elementos). 
+    space-evenly(centra todo, dejando un espacio igual a los costados)... se puede hacer de forma vertical o horizontal*/
+    flex-direction: row; /*row (pone todo en una fila). column(pone todo en una sola columna en vertical). reverse(fila o colomna pero al reves)    */
+}
+
+.s1 {
+    width: 200px;
+    background-color: yellow;
+}
+
+.s2 {
+    width: 200px;
+    background-color: yellow;
+}
+
+.s3 {
+    width: 200px;
+    background-color: yellow;
+}
+
+.container2 {
+    background-color: purple;
+    margin: auto;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+}
+
+.section1, .section2, .section3 {
+    background-color: blanchedalmond;
+    flex: 1; /*1/3,  1/3, 1/3 fraccion de espacio q ocupara en el espaicio */
+}
+
+.section2 {
+    flex: 2;
+}
+
+.section3 {
+    flex: 3;
+}
+
+/*
+section1 = 1 -> 1/6
+section2 = 2 -> 2/6
+section3 = 3 -> 3/6
+
+TOTAL 6 espacios
+
+*/
